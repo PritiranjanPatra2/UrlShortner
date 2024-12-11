@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f857a6, #ff5858);
+  color: white;
+  
+ 
+}
+
+.app-container {
+  width: 100%;
+ 
+  min-height: 70vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff5858, #f857a6);
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-highlight {
+  color: #ffd700;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: #ff5858;
+  font-weight: bold;
+}
+
+.nav-button.register {
+  background-color: #ff5858;
+  color: white;
+}
+
+.content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input {
+  padding: 15px;
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: #ff5858;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: yellow;
+  margin-top: 10px;
+}
+.short-url {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff5858, #f857a6);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.short-url:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.short-url:active {
+  transform: translateY(1px);
+}
