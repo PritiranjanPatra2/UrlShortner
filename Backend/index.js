@@ -26,7 +26,7 @@ app.post("/add", async (req, res) => {
     if (existingUrl) {
       return res
         .status(200)
-        .json({ shortUrl: `http://localhost:${PORT}/${existingUrl.shortUrl}` });
+        .json({ shortUrl: `https://urlshortner-8kl7.onrender.com/${existingUrl.shortUrl}` });
     }
 
     const shortUrl = nanoid();
@@ -60,7 +60,7 @@ app.get("/:id", async (req, res) => {
 
 
 mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URI)
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
