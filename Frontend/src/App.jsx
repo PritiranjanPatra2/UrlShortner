@@ -20,7 +20,7 @@ const App = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:9192/add", {
+      const response = await axios.post("https://urlshortner-8kl7.onrender.com/add", {
         originalUrl,
       });
       setShortUrl(response.data.shortUrl);
